@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC 
+	"-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<!-- 配置别名 ：是为了在其它需要使用	完全限定名	的地方可以用  别名	来取代。
+		如SQLMapper 配置文件中，对于 resultType 和 parameterType 属性值，我们需要使用 JavaBean 的完全限定名，
+		对此，就可以用 别名 替代。注：namespace中的  完全限定名 不能用别名替代。	
+	-->
+	<typeAliases>
+		<typeAlias type="com.graykey.ssm.dao.IUserDao" alias="IUserDao" />
+		<typeAlias type="com.graykey.ssm.model.User" alias="User" />
+	</typeAliases>
+
+</configuration>

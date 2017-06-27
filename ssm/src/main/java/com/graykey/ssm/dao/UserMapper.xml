@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+
+
+<!-- namespace 的值被设置成 com.graykey.ssm.dao.IUserDao，是 UserMapper 接口的完全限定名。
+		这使我们可以使用接口来调用映射的 SQL 语句。 -->
+<mapper namespace="com.graykey.ssm.dao.IUserDao">  
+     	
+    <insert id="add" parameterType="User">
+		insert into tb_user(user_id,user_name) values(#{userId},#{userName})
+	</insert>
+    
+</mapper>  
